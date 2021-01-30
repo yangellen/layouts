@@ -14,14 +14,14 @@ class TitleSection extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
-                    'Oeschinen Lake Campground',
+                    'The Apple Cart',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 Text(
-                  'Kandersteg, Switzerland',
+                  'Corvallis, Oregon',
                   style: TextStyle(
                     color: Colors.grey[500],
                   ),
@@ -33,7 +33,7 @@ class TitleSection extends StatelessWidget {
             Icons.star,
             color: Colors.red[500],
           ),
-          Text('41'),
+          Text('999'),
         ],
       ),
     );
