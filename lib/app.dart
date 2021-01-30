@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'title_section.dart';
 
 class App extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -8,7 +9,11 @@ class App extends StatelessWidget {
         appBar: AppBar(
           title: Text('Flutter layout demo'),
         ),
-        body: Center(child: Text('Hello World')),
+        body: Column(
+          children: [
+            TitleSection(),
+          ],
+        ),
       ),
     );
   }
