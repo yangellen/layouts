@@ -13,6 +13,12 @@ class App extends StatelessWidget {
         ),
         body: Column(
           children: [
+            Image.asset(
+              'images/color_apple.jpg',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
             TitleSection(),
             ButtonSection(),
             TextSection(),
