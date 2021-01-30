@@ -9,9 +9,9 @@ class App extends StatelessWidget {
       title: 'Flutter layout demo',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Flutter layout demo'),
+          title: Text('The Apple Cart'),
         ),
-        body: Column(
+        body: ListView(
           children: [
             Image.asset(
               'images/color_apple.jpg',
