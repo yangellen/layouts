@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'title_section.dart';
+import 'button_section.dart';
 
 class App extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -12,6 +13,7 @@ class App extends StatelessWidget {
         body: Column(
           children: [
             TitleSection(),
+            ButtonSection(),
           ],
         ),
       ),
