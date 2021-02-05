@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'favorite_widget.dart';
 
 class TitleSection extends StatelessWidget {
   @override
@@ -29,11 +30,7 @@ class TitleSection extends StatelessWidget {
               ],
             ),
           ),
-          Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
-          Text('999'),
+          FavoriteWidget(),
         ],
       ),
     );
