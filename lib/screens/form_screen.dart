@@ -22,14 +22,16 @@ class _FormScreenState extends State<FormScreen> {
               validator: (value) {
                 if (value.isEmpty) {
                   return 'Please enter some text';
+                } else {
+                  return null;
                 }
-                return null;
               },
             ),
           ),
           ElevatedButton(
             onPressed: () {
               if (formKey.currentState.validate()) {
+                formKey.currentState.save();
                 Scaffold.of(context).showSnackBar(SnackBar(
                   content: Text('Processing Data'),
                 ));
