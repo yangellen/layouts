@@ -6,8 +6,23 @@ class FormScreen extends StatefulWidget {
 }
 
 class _FormScreenState extends State<FormScreen> {
+  final formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Form(
+      key: formKey,
+      child: Column(
+        children: [
+          TextFormField(
+            validator: (value) {
+              if (value.isEmpty) {
+                return 'Please enter some text';
+              }
+              return null;
+            },
+          )
+        ],
+      ),
+    );
   }
 }
