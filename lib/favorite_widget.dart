@@ -7,7 +7,7 @@ class FavoriteWidget extends StatefulWidget {
 
 class _FavoriteWidgetState extends State<FavoriteWidget> {
   bool _isFavorited = true;
-  int _favoriteCount = 41;
+  int _favoriteCount = 99;
 
   @override
   Widget build(BuildContext context) {
