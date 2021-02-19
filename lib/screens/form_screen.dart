@@ -12,14 +12,30 @@ class _FormScreenState extends State<FormScreen> {
     return Form(
       key: formKey,
       child: Column(
-        children: [
-          TextFormField(
-            validator: (value) {
-              if (value.isEmpty) {
-                return 'Please enter some text';
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              autofocus: true,
+              decoration: InputDecoration(
+                  labelText: 'Enter Text', border: OutlineInputBorder()),
+              validator: (value) {
+                if (value.isEmpty) {
+                  return 'Please enter some text';
+                }
+                return null;
+              },
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              if (formKey.currentState.validate()) {
+                Scaffold.of(context).showSnackBar(SnackBar(
+                  content: Text('Processing Data'),
+                ));
               }
-              return null;
             },
+            child: Text('Submit'),
           )
         ],
       ),
